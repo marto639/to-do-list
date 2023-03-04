@@ -12,13 +12,13 @@ window.addEventListener('load', () => {
         });
 
     function listsCreating() {
-        let container = document.createElement('li');
-        container.classList.add('to-do-container');
-        container.textContent = listText.value;
+        let liText = document.createElement('li');
+        liText.classList.add('to-do-container');
+        liText.textContent = listText.value;
 
-        document.querySelector('.container').appendChild(container);
+        document.querySelector('.container').appendChild(liText);
 
-        container.addEventListener('click', (e) => removeList(e));
+        liText.addEventListener('click', (e) => removeList(e));
     };
 
     function removeList(e) {

@@ -10,10 +10,40 @@
   border: 2px solid black;
   float: left;
   margin: 8px 8px auto auto;
+  list-style-type: none;
 }
 
-.information {
+.text-area-information {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
+  height: 200px;
+  resize: none;
+}
+
+.info-container {
+  margin-bottom: 100px;
+}
+
+.add-list-btn {
+  position: relative;
+  top: 53%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 8%;
+  height: 5%;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  text-align: center;
+  font-size: 150%;
+  cursor: default;
+}
+
+.add-list-btn:active {
+  background-color: blue;
 }

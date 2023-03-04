@@ -12,6 +12,8 @@ window.addEventListener('load', () => {
 })
 
 function listsCreating() {
-    let container = document.createElement('div');
-    container.classList.add('container');
+    let container = document.createElement('span');
+    container.classList.add('to-do-container');
+
+    document.querySelector('.container').appendChild(container);
 }

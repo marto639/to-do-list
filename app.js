@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    let listText = document.querySelector('.text-area-information');
+    let listText = document.querySelector('.input-area-information');
 
     document.querySelector('.add-list-btn')
         .addEventListener('click', () => {
@@ -12,13 +12,20 @@ window.addEventListener('load', () => {
         });
 
     function listsCreating() {
-        let liText = document.createElement('li');
-        liText.classList.add('to-do-container');
-        liText.textContent = listText.value;
 
-        document.querySelector('.container').appendChild(liText);
 
-        liText.addEventListener('click', (e) => removeList(e));
+        listText.value.split(/[.:]/)
+            .map(x => {
+                let liText = document.createElement('li');
+                liText.classList.add('to-do-container');
+
+                liText.textContent = x;
+
+                document.querySelector('.container').appendChild(liText);
+                liText.addEventListener('click', (e) => removeList(e));
+            });
+
+
     };
 
     function removeList(e) {

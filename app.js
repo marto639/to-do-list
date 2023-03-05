@@ -12,8 +12,6 @@ window.addEventListener('load', () => {
         });
 
     function listsCreating() {
-
-
         listText.value.split(/[.:]/)
             .map(x => {
                 let liText = document.createElement('li');
@@ -29,6 +27,11 @@ window.addEventListener('load', () => {
     };
 
     function removeList(e) {
-        e.target.remove();
+        e.target.classList.add('to-do-container-remover');
+
+        setTimeout(() => {
+            e.target.remove();
+
+        }, 1000);
     }
 })

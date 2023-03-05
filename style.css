@@ -16,9 +16,35 @@
   overflow: hidden;
 }
 
-.to-do-container:active {
-  box-shadow: -1px -1px 13px 10px red;
-  text-decoration: line-through;
+.to-do-container-remover {
+  width: 6vw;
+  border-radius: 100%;
+  animation: pulse 1s;
+  margin: 8px auto auto 43vw;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes removeList {
+  from {
+    margin: auto auto auto auto;
+  }
+  to {
+    margin: auto auto 50px auto;
+  }
 }
 
 .input-area-information {

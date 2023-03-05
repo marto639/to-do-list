@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
                 liText.addEventListener('click', (e) => removeList(e));
             });
 
-
+        listText.value = '';
     };
 
     function removeList(e) {

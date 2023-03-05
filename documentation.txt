@@ -1,0 +1,2 @@
+1. To create a list with information you need to fill the text area.
+2. To delete a list you have to click on it.
